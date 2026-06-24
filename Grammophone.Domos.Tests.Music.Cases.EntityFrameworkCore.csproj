@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<ProjectGuid>{4C6B8D2F-93AD-48C8-BD86-A1E7DD0A78DD}</ProjectGuid>
+		<TargetFramework>net8.0</TargetFramework>
+		<IsTestProject>true</IsTestProject>
+		<AssemblyTitle>Grammophone.Domos.Tests.Music.Cases.EntityFrameworkCore</AssemblyTitle>
+		<Product>Grammophone.Domos.Tests.Music.Cases.EntityFrameworkCore</Product>
+		<LangVersion>8.0</LangVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+		<PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
+		<PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
+		<PackageReference Include="Unity.Configuration" Version="5.11.2" />
+		<PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Grammophone.Domos.Tests.Music.Cases\Grammophone.Domos.Tests.Music.Cases.csproj" />
+		<ProjectReference Include="..\Grammophone.Domos.Tests.Music.DataAccess.EntityFrameworkCore\Grammophone.Domos.Tests.Music.DataAccess.EntityFrameworkCore.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="App.config" CopyToOutputDirectory="PreserveNewest" TargetPath="testhost.dll.config" />
+		<Content Include="App.config" CopyToOutputDirectory="PreserveNewest" TargetPath="testhost.exe.config" />
+	</ItemGroup>
+</Project>
