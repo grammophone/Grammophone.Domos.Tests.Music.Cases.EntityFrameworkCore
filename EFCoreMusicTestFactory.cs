@@ -14,7 +14,7 @@ namespace Grammophone.Domos.Tests.Music.Cases.EntityFrameworkCore
 				.UseSqlServer(ConnectionString)
 				.Options;
 
-			return new EFCoreMusicDomosDomainContainer(options, useChangeTracking: false);
+			return new EFCoreMusicDomosDomainContainer(options);
 		}
 
 		public static void DropDatabase()
